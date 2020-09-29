@@ -38,7 +38,7 @@ class Login extends React.Component {
 
     console.log(user1);
 // http://localhost:8000/users/login
-    axios.post(' https://mastermind-backend.herokuapp.com/users/login  ', user1)
+    axios.post('https://mastermind-backend.herokuapp.com/users/login  ', user1)
       .then(res => {
 
         if (res.data == 'successfully login') {

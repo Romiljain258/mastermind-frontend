@@ -54,7 +54,7 @@ class Register extends React.Component {
         }
 
         console.log(user);
-        axios.post(' https://mastermind-backend.herokuapp.com/users/register', user)
+        axios.post('https://mastermind-backend.herokuapp.com/users/register', user)
             .then(res => {
                 this.setState({
                     setData: res.data,
